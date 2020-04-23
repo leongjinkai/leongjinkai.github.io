@@ -7,3 +7,15 @@
   color: ;
   text-align: center;
 }
+
+.hero-body{
+  background-color: #35495e;
+}
+
+.navbar-brand{
+  background-color: #35495e;
+}
+
+a.buttons{
+  color: #35495e;
+}

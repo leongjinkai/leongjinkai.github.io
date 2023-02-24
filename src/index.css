@@ -23,6 +23,15 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+#scroll-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+#scroll-carousel {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 @font-face {
   font-family: "Proxima";
   src: url("./font/Proxima Nova Regular.otf");

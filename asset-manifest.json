@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jinkai-portfolio-website/static/css/main.89ee1a44.css",
+    "main.js": "/jinkai-portfolio-website/static/js/main.472e9822.js",
+    "static/media/Proxima Nova Bold.otf": "/jinkai-portfolio-website/static/media/Proxima Nova Bold.da16c8975f25ca6f2997.otf",
+    "static/media/Proxima Nova Extrabold.otf": "/jinkai-portfolio-website/static/media/Proxima Nova Extrabold.c9d202c8ffb95b6ec8c1.otf",
+    "static/media/Proxima Nova Regular.otf": "/jinkai-portfolio-website/static/media/Proxima Nova Regular.7bc9ce404c297c24f210.otf",
+    "static/media/ProximaNova-Thin.otf": "/jinkai-portfolio-website/static/media/ProximaNova-Thin.b0d2279d75279ba5b3fd.otf",
+    "index.html": "/jinkai-portfolio-website/index.html",
+    "main.89ee1a44.css.map": "/jinkai-portfolio-website/static/css/main.89ee1a44.css.map",
+    "main.472e9822.js.map": "/jinkai-portfolio-website/static/js/main.472e9822.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89ee1a44.css",
+    "static/js/main.472e9822.js"
+  ]
+}

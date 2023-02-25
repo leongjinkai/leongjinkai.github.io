@@ -11,12 +11,26 @@ import profile from './images/jk_headshot.jpg'
 import logo from './images/jk-logo.svg'
 
 function App() {
+  const handleLinkedin = () => {
+    window.open("https://www.linkedin.com/in/leongjinkai/", "_blank")
+  }
+  const handleGithub = () => {
+    window.open("https://github.com/leongjinkai", "_blank")
+  }
+  const handleEmail = () => {
+    window.location.href = "mailto:leongjinkai@gmail.com"
+  }
+  const handleCodepen = () => {
+    window.open("https://codepen.io/leongjinkai", "_blank")
+  }
+
   return (
     <div className="">
       <Navbar />
       <Sidebar />
       <div id="scroll-container" className="snap-y snap-mandatory max-h-screen w-full overflow-scroll scroll-smooth">
-        <div className="relative h-[100vh] snap-start flex flex-col justify-center items-center md:items-stretch md:gap-10 gap-8">
+        <div id='about-portion' className="relative h-[100vh] snap-start flex flex-col justify-center items-center md:items-stretch md:gap-10 gap-8">
+          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10 z-10 md:hidden">WELCOME</div>
           <div className="flex w-[80%] md:ml-[20%] items-center md:gap-20 gap-8 md:flex-row flex-col-reverse">
             <div className="md:w-[50%] md:min-w-[320px] md:max-w-[420px] flex flex-col grow-0">
               <p className="text-[#EE4E2E]">Hi, my name is</p>
@@ -31,16 +45,18 @@ function App() {
           <div className="hidden md:static">
             <p className="md:ml-[20%]">I specialize in building and desiging<br />interfaces for exceptional digital experiences</p>
           </div>
-          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-[-100px] md:text-[150px] text-[80px] opacity-10 ">ABOUT</div>
+          {/* Web Position */}
+          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-[-100px] md:text-[150px] text-[80px] opacity-10 hidden">ABOUT</div>
         </div>
+        {/* Mobile Position appears*/}
         <div className="md:hidden relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-10 md:text-[150px] text-[80px] opacity-10">ABOUT</div>
+          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10">ABOUT</div>
           <div className="w-[80%]">
             <p className="font-bold text-3xl">I specialize in building and desiging<br />interfaces for exceptional digital experiences</p>
           </div>
         </div>
-        <div className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-10 md:text-[150px] text-[80px] opacity-10">SKILLS</div>
+        <div id='skills-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
+          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10">SKILLS</div>
           <MdDesignServices className="absolute text-[200px] opacity-25"/>
           <div className="flex flex-col w-[80%] md:h-[55%] h-[65%] justify-center items-center gap-5">
             <div className="font-extrabold md:text-6xl text-5xl pr-[40%] text-[#5EB1BF]">Design</div>
@@ -66,8 +82,8 @@ function App() {
             <div className="font-extrabold md:text-6xl text-5xl md:pl-[43%] pl-[15%] text-[#EE4E2E]">Engineering</div>
           </div>
         </div>
-        <div className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-10 md:text-[150px] text-[80px] opacity-10">PROJECTS</div>
+        <div id='projects-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
+          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10">PROJECTS</div>
           <div className="md:flex w-[80%] gap-16 justify-center md:flex-row hidden">
             <div className="text-center">
               <div className="w-60 h-60 bg-[#5EB1BF] opacity-30"></div>
@@ -84,14 +100,14 @@ function App() {
           </div>
           <Carousel />
         </div>
-        <div className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-10 md:text-[150px] text-[80px] opacity-10 z-10">CONTACT</div>
+        <div id='contact-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
+          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10 z-10">CONTACT</div>
           <div className="flex flex-col items-center md:gap-7 gap-6">
             <div className="flex text-3xl md:gap-16 gap-4">
-              <GrLinkedinOption />
-              <AiFillGithub />
-              <FiMail />
-              <AiOutlineCodepen />
+              <GrLinkedinOption onClick={handleLinkedin} className='hover:text-red-400 cursor-pointer' />
+              <AiFillGithub onClick={handleGithub} className='hover:text-red-400 cursor-pointer' />
+              <FiMail onClick={handleEmail} className='hover:text-red-400 cursor-pointer' />
+              <AiOutlineCodepen onClick={handleCodepen} className='hover:text-red-400 cursor-pointer' />
             </div>
             <div className="font-extrabold md:text-6xl text-5xl text-center"><span className="text-[#EE4E2E]">drop me a </span>message.</div>
             <div className="text-center text-white leading-tight">Got a question or collaboration opportunity,<br />Or just simply want to say hi?<br />Go ahead.</div>

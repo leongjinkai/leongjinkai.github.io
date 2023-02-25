@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/jinkai-portfolio-website/static/css/main.2b7d24f4.css",
-    "main.js": "/jinkai-portfolio-website/static/js/main.e33ba105.js",
-    "static/media/Proxima Nova Bold.otf": "/jinkai-portfolio-website/static/media/Proxima Nova Bold.da16c8975f25ca6f2997.otf",
-    "static/media/Proxima Nova Extrabold.otf": "/jinkai-portfolio-website/static/media/Proxima Nova Extrabold.c9d202c8ffb95b6ec8c1.otf",
-    "static/media/Proxima Nova Regular.otf": "/jinkai-portfolio-website/static/media/Proxima Nova Regular.7bc9ce404c297c24f210.otf",
-    "static/media/ProximaNova-Thin.otf": "/jinkai-portfolio-website/static/media/ProximaNova-Thin.b0d2279d75279ba5b3fd.otf",
-    "static/media/jk_headshot.jpg": "/jinkai-portfolio-website/static/media/jk_headshot.dafc62b5806473e80c1e.jpg",
-    "index.html": "/jinkai-portfolio-website/index.html",
-    "static/media/jk-logo.svg": "/jinkai-portfolio-website/static/media/jk-logo.c6420aa25b99aef714a8c6b773137485.svg",
-    "main.2b7d24f4.css.map": "/jinkai-portfolio-website/static/css/main.2b7d24f4.css.map",
-    "main.e33ba105.js.map": "/jinkai-portfolio-website/static/js/main.e33ba105.js.map"
+    "main.css": "/static/css/main.94b52fb5.css",
+    "main.js": "/static/js/main.0b43ed58.js",
+    "static/media/Proxima Nova Bold.otf": "/static/media/Proxima Nova Bold.da16c8975f25ca6f2997.otf",
+    "static/media/Proxima Nova Extrabold.otf": "/static/media/Proxima Nova Extrabold.c9d202c8ffb95b6ec8c1.otf",
+    "static/media/Proxima Nova Regular.otf": "/static/media/Proxima Nova Regular.7bc9ce404c297c24f210.otf",
+    "static/media/ProximaNova-Thin.otf": "/static/media/ProximaNova-Thin.b0d2279d75279ba5b3fd.otf",
+    "static/media/jk_headshot.jpg": "/static/media/jk_headshot.dafc62b5806473e80c1e.jpg",
+    "index.html": "/index.html",
+    "static/media/jk-logo.svg": "/static/media/jk-logo.c6420aa25b99aef714a8c6b773137485.svg",
+    "main.94b52fb5.css.map": "/static/css/main.94b52fb5.css.map",
+    "main.0b43ed58.js.map": "/static/js/main.0b43ed58.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b7d24f4.css",
-    "static/js/main.e33ba105.js"
+    "static/css/main.94b52fb5.css",
+    "static/js/main.0b43ed58.js"
   ]
 }

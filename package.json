@@ -1,6 +1,6 @@
 {
   "name": "jk-portfolio",
-  "homepage": "https://leongjinkai.github.io/jinkai-portfolio-website",
+  "homepage": "https://leongjinkai.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pre-deploy":"npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [

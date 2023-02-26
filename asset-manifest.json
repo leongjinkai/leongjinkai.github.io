@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4f211f0.css",
-    "main.js": "/static/js/main.6323c02c.js",
+    "main.css": "/static/css/main.dbbb3c16.css",
+    "main.js": "/static/js/main.647a0cfb.js",
     "static/media/jinkai-resume.pdf": "/static/media/jinkai-resume.1cb542788c0233a2ad2e.pdf",
     "static/media/Proxima Nova Bold.otf": "/static/media/Proxima Nova Bold.da16c8975f25ca6f2997.otf",
     "static/media/Proxima Nova Extrabold.otf": "/static/media/Proxima Nova Extrabold.c9d202c8ffb95b6ec8c1.otf",
@@ -10,11 +10,11 @@
     "static/media/jk_headshot.jpg": "/static/media/jk_headshot.dafc62b5806473e80c1e.jpg",
     "index.html": "/index.html",
     "static/media/jk-logo.svg": "/static/media/jk-logo.c6420aa25b99aef714a8c6b773137485.svg",
-    "main.a4f211f0.css.map": "/static/css/main.a4f211f0.css.map",
-    "main.6323c02c.js.map": "/static/js/main.6323c02c.js.map"
+    "main.dbbb3c16.css.map": "/static/css/main.dbbb3c16.css.map",
+    "main.647a0cfb.js.map": "/static/js/main.647a0cfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4f211f0.css",
-    "static/js/main.6323c02c.js"
+    "static/css/main.dbbb3c16.css",
+    "static/js/main.647a0cfb.js"
   ]
 }

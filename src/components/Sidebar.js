@@ -22,7 +22,7 @@ export default function Sidebar({isinView}) {
     return (
         <>
             <div className="fixed bottom-24 left-[10%] z-10" 
-                style={ isinView ? {transform: "translateX(-200px)", transition: "transform 1s"} : {transform: "translateX(0px)", transition: "transform 1s"} }>
+                style={ isinView ? {transform: "translateX(-300px)", transition: "transform 1s"} : {transform: "translateX(0px)", transition: "transform 1s"} }>
             <div className='md:flex flex-col gap-6 text-2xl hidden'>
                 <GrLinkedinOption onClick={handleLinkedin} className='hover:text-red-400 cursor-pointer' />
                 <AiFillGithub onClick={handleGithub} className='hover:text-red-400 cursor-pointer' />

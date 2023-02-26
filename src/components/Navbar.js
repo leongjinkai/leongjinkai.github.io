@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <>
     {/* Web version logic */}
-      <motion.div className={`bg-[#042a2b] text-sm font-bold text-center w-full h-16 fixed md:flex justify-between items-center px-[10%] z-10 hidden`}
+      <motion.div className={`bg-[#042a2b] text-sm font-bold text-center w-full h-16 fixed md:flex justify-between items-center px-[10%] z-10 hidden border-1`}
       initial={{translateY: -100}}
       animate={{translateY: 0}}
       transition={{duration: 0.5}}>

@@ -60,11 +60,11 @@ export default function Navbar() {
       {/* Mobile version logic */}
       <AnimatePresence>
       <div className='md:hidden w-full'>
-          <motion.div className='bg-white fixed w-[100vw] h-[60%] z-30 text-black'
+          <motion.div className='bg-white fixed w-[100vw] h-[70%] z-30 text-black'
           animate={burgerToggle ? "open": "closed"}
           initial={{translateY: -1000}}
           variants={variants}>
-            <div className='w-[75%] mx-auto text-end flex flex-col gap-6 pt-20 text-2xl text-[#042a2b]'>
+            <div className='w-[80%] mx-auto text-end flex flex-col gap-4 pt-20 text-2xl text-[#042a2b]'>
               <motion.div onClick={() => {setBurgerToggle(!burgerToggle)}}><a href="#about-portion">About</a></motion.div>
               <div onClick={() => {setBurgerToggle(!burgerToggle)}}><a href="#skills-portion">Skills</a></div>
               <div onClick={() => {setBurgerToggle(!burgerToggle)}}><a href="#projects-portion">Projects</a></div>

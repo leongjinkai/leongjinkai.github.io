@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ec9d3607.css",
-    "main.js": "/static/js/main.e3d19044.js",
+    "main.css": "/static/css/main.a4f211f0.css",
+    "main.js": "/static/js/main.6323c02c.js",
     "static/media/jinkai-resume.pdf": "/static/media/jinkai-resume.1cb542788c0233a2ad2e.pdf",
     "static/media/Proxima Nova Bold.otf": "/static/media/Proxima Nova Bold.da16c8975f25ca6f2997.otf",
     "static/media/Proxima Nova Extrabold.otf": "/static/media/Proxima Nova Extrabold.c9d202c8ffb95b6ec8c1.otf",
@@ -9,13 +9,12 @@
     "static/media/ProximaNova-Thin.otf": "/static/media/ProximaNova-Thin.b0d2279d75279ba5b3fd.otf",
     "static/media/jk_headshot.jpg": "/static/media/jk_headshot.dafc62b5806473e80c1e.jpg",
     "index.html": "/index.html",
-    "static/media/jk-logo-orange.svg": "/static/media/jk-logo-orange.a721d203058ffdc1da6e8d49f450f8dd.svg",
     "static/media/jk-logo.svg": "/static/media/jk-logo.c6420aa25b99aef714a8c6b773137485.svg",
-    "main.ec9d3607.css.map": "/static/css/main.ec9d3607.css.map",
-    "main.e3d19044.js.map": "/static/js/main.e3d19044.js.map"
+    "main.a4f211f0.css.map": "/static/css/main.a4f211f0.css.map",
+    "main.6323c02c.js.map": "/static/js/main.6323c02c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec9d3607.css",
-    "static/js/main.e3d19044.js"
+    "static/css/main.a4f211f0.css",
+    "static/js/main.6323c02c.js"
   ]
 }

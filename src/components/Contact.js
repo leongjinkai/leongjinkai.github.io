@@ -23,11 +23,11 @@ export default forwardRef(function Contact(props, ref) {
       
     return (
         <>
-        <motion.div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-25 z-10"
+        <motion.div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[70px] opacity-25 z-10"
           initial={{translateX:300}}
           whileInView={{translateX: 0}}
           transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>CONTACT</motion.div>
-          <div className="flex flex-col items-center md:gap-7 gap-6">
+          <div className="flex flex-col items-center md:gap-7 gap-6 mb-[100px]">
             <div ref={ref} className="flex text-3xl md:gap-16 gap-4">
               <GrLinkedinOption onClick={handleLinkedin} className='hover:text-red-400 cursor-pointer' />
               <AiFillGithub onClick={handleGithub} className='hover:text-red-400 cursor-pointer' />
@@ -39,7 +39,7 @@ export default forwardRef(function Contact(props, ref) {
               initial={{translateY: -200, opacity:0}}
               transition={{duration: 2, type:'spring', bounce: 0.5}}>
               <span className="text-[#EE4E2E]">drop me a </span>message.
-              <motion.div className="absolute text-3xl md:right-[-2rem] md:top-[0rem] right-10 top-12"
+              <motion.div className="absolute text-3xl md:right-[-2rem] md:top-[0rem] md:left-[34rem] left-[16rem] top-12"
                 whileInView={{scale: 1}}
                 initial={{scale: 0}}
                 transition={{duration: 0.4, delay: 4, bounce: 1, repeatType:"reverse", repeat: Infinity, repeatDelay:4}}

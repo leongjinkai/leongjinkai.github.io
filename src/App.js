@@ -55,14 +55,14 @@ function App() {
             <p className="md:ml-[20%]">I specialize in building and desiging<br />interfaces for exceptional digital experiences</p>
           </div>
           {/* Web Position */}
-          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-[-100px] md:text-[150px] text-[80px] opacity-25 hidden md:block"
+          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-[-100px] md:text-[150px] text-[70px] opacity-25 hidden md:block"
           initial={{translateX:-300}}
           whileInView={{translateX: 0}}
           transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>ABOUT</motion.div>
         </div>
         {/* Mobile Position appears*/}
         <div className="md:hidden relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-25"
+          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[70px] opacity-25"
           initial={{translateX:-300}}
           whileInView={{translateX: 0}}
           transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>ABOUT</motion.div>
@@ -71,7 +71,7 @@ function App() {
           </div>
         </div>
         <div id='skills-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <motion.div className="font-thin absolute md:left-[15%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-25"
+          <motion.div className="font-thin absolute md:left-[15%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[70px] opacity-25"
           initial={{translateX:300}}
           whileInView={{translateX: 0}}
           transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>SKILLS</motion.div>
@@ -81,7 +81,7 @@ function App() {
             transition={{duration: 0.4}}>
             <MdDesignServices className="text-[15rem] opacity-5 text-white"/>
           </motion.div>
-          <div className="flex flex-col w-[80%] md:h-[55%] h-[65%] justify-center items-center gap-5">
+          <div className="flex flex-col w-[80%] md:h-[55%] h-[65%] justify-center items-center gap-5 mb-[100px]">
             {/* Mobile Version */}
             <div className="flex justify-center items-center gap-3 text-white md:hidden mr-8">
                 <span className="grow">Figma</span>
@@ -112,7 +112,7 @@ function App() {
                 <span className="row-start-4 row-end-4">TailwindCSS</span>
               </div>
             </div>
-            <motion.div className="font-extrabold md:text-6xl text-5xl md:pl-[43%] pl-[15%] text-[#EE4E2E]"
+            <motion.div className="font-extrabold md:text-6xl text-5xl md:pl-[43%] pl-[5%] text-[#EE4E2E]"
             initial={{translateX:300}}
             whileInView={{translateX: 0}}>Engineering</motion.div>
             <div className="grid grid-cols-3 grid-rows-3 grid-flow-col left-10 items-end text-white md:hidden gap-x-6 text-center w-[80%]">
@@ -129,7 +129,7 @@ function App() {
           </div>
         </div>
         <div id='projects-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-25"
+          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[70px] opacity-25"
           initial={{translateX:-300}}
           whileInView={{translateX: 0}}
           transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>PROJECTS</motion.div>

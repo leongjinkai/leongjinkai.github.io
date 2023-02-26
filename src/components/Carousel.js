@@ -14,13 +14,13 @@ export default function Carousel() {
     return (
         <>
             <div className="md:hidden">
-                <svg className="absolute top-[110px] left-[35vw]">
+                <svg className="absolute top-[110px] left-[30vw]">
                     <circle cx="50" cy="50" r="5" className="" style={isinViewOne ? {fill: "#EE4E2E"} : {fill: "#5EB1BF"}} />
                 </svg>
-                <svg className="absolute top-[110px] left-[40vw]">
+                <svg className="absolute top-[110px] left-[38vw]">
                     <circle cx="50" cy="50" r="5" className="" style={isinViewTwo ? {fill: "#EE4E2E"} : {fill: "#5EB1BF"}} />
                 </svg>
-                <svg className="absolute top-[110px] left-[45vw]">
+                <svg className="absolute top-[110px] left-[46vw]">
                     <circle cx="50" cy="50" r="5" className="" style={isinViewThree ? {fill: "#EE4E2E"} : {fill: "#5EB1BF"}} />
                 </svg>
             </div>

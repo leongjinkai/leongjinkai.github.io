@@ -3,60 +3,64 @@ import Navbar from "./components/Navbar.js";
 import Sidebar from "./components/Sidebar.js";
 import Carousel from "./components/Carousel.js";
 import { MdDesignServices } from 'react-icons/md'
-import { GrLinkedinOption } from 'react-icons/gr'
-import {AiFillGithub} from 'react-icons/ai'
-import { FiMail } from 'react-icons/fi'
-import { AiOutlineCodepen } from 'react-icons/ai'
 import profile from './images/jk_headshot.jpg'
-import logo from './images/jk-logo.svg'
+
+import { motion, useInView } from "framer-motion";
+import Contact from "./components/Contact";
+import { useRef } from "react";
 
 function App() {
-  const handleLinkedin = () => {
-    window.open("https://www.linkedin.com/in/leongjinkai/", "_blank")
-  }
-  const handleGithub = () => {
-    window.open("https://github.com/leongjinkai", "_blank")
-  }
-  const handleEmail = () => {
-    window.location.href = "mailto:leongjinkai@gmail.com"
-  }
-  const handleCodepen = () => {
-    window.open("https://codepen.io/leongjinkai", "_blank")
-  }
+  const ref = useRef(null)
+  const isinView = useInView(ref)
 
   return (
     <div className="">
       <Navbar />
-      <Sidebar />
-      <div id="scroll-container" className="snap-y snap-mandatory max-h-screen w-full overflow-scroll scroll-smooth">
+      <Sidebar isinView={isinView} />
+      <div id="scroll-container" className="snap-y snap-mandatory max-h-screen w-full overflow-scroll scroll-smooth overflow-x-hidden">
         <div id='about-portion' className="relative h-[100vh] snap-start flex flex-col justify-center items-center md:items-stretch md:gap-10 gap-8">
-          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10 z-10 md:hidden">WELCOME</div>
+          <motion.div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10 z-10 md:hidden"
+          initial={{translateX:300}}
+          whileInView={{translateX: 0}}
+          transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>WELCOME</motion.div>
           <div className="flex w-[80%] md:ml-[20%] items-center md:gap-20 gap-8 md:flex-row flex-col-reverse">
-            <div className="md:w-[50%] md:min-w-[320px] md:max-w-[420px] flex flex-col grow-0">
+            <motion.div className="md:w-[50%] md:min-w-[320px] md:max-w-[420px] flex flex-col grow-0"
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              transition={{delay: 1}}
+              viewport= {{once: true}}>
               <p className="text-[#EE4E2E]">Hi, my name is</p>
               <p className="text-white text-center font-Proxima font-extrabold text-[96px] p-0 leading-none">JINKAI</p>
               <p className="text-end font-bold text-3xl">Web Developer</p>
-            </div>
-            <div className="w-48 h-48 relative">
-              <img className="rounded-full z-10 object-cover grayscale" src={profile} alt="profilepic" />
-              <div className="w-48 h-48 bg-[#EE4E2E] border-[#042a2b] border rounded-full z-20 absolute top-0 opacity-10"></div>
+            </motion.div>
+            <div className="w-48 h-48 relative hover:scale-110 grayscale hover:grayscale-0">
+              <img className="rounded-full z-10 object-cover" src={profile} alt="profilepic" />
             </div>
           </div>
-          <div className="hidden md:static">
+          <div className="hidden md:block">
             <p className="md:ml-[20%]">I specialize in building and desiging<br />interfaces for exceptional digital experiences</p>
           </div>
           {/* Web Position */}
-          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-[-100px] md:text-[150px] text-[80px] opacity-10 hidden">ABOUT</div>
+          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-[-100px] md:text-[150px] text-[80px] opacity-10 hidden md:block"
+          initial={{translateX:-300}}
+          whileInView={{translateX: 0}}
+          transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>ABOUT</motion.div>
         </div>
         {/* Mobile Position appears*/}
         <div className="md:hidden relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10">ABOUT</div>
+          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10 "
+          initial={{translateX:-300}}
+          whileInView={{translateX: 0}}
+          transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>ABOUT</motion.div>
           <div className="w-[80%]">
             <p className="font-bold text-3xl">I specialize in building and desiging<br />interfaces for exceptional digital experiences</p>
           </div>
         </div>
         <div id='skills-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10">SKILLS</div>
+          <motion.div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10"
+          initial={{translateX:300}}
+          whileInView={{translateX: 0}}
+          transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>SKILLS</motion.div>
           <MdDesignServices className="absolute text-[200px] opacity-25"/>
           <div className="flex flex-col w-[80%] md:h-[55%] h-[65%] justify-center items-center gap-5">
             <div className="font-extrabold md:text-6xl text-5xl pr-[40%] text-[#5EB1BF]">Design</div>
@@ -83,7 +87,10 @@ function App() {
           </div>
         </div>
         <div id='projects-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10">PROJECTS</div>
+          <motion.div className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10"
+          initial={{translateX:-300}}
+          whileInView={{translateX: 0}}
+          transition={{type:'spring', stiffness: 50, mass: 0.5, ease: "easeOut"}}>PROJECTS</motion.div>
           <div className="md:flex w-[80%] gap-16 justify-center md:flex-row hidden">
             <div className="text-center">
               <div className="w-60 h-60 bg-[#5EB1BF] opacity-30"></div>
@@ -101,22 +108,7 @@ function App() {
           <Carousel />
         </div>
         <div id='contact-portion' className="relative bg-[#042a2b] h-[100vh] snap-start flex justify-center items-center">
-          <div className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[80px] opacity-10 z-10">CONTACT</div>
-          <div className="flex flex-col items-center md:gap-7 gap-6">
-            <div className="flex text-3xl md:gap-16 gap-4">
-              <GrLinkedinOption onClick={handleLinkedin} className='hover:text-red-400 cursor-pointer' />
-              <AiFillGithub onClick={handleGithub} className='hover:text-red-400 cursor-pointer' />
-              <FiMail onClick={handleEmail} className='hover:text-red-400 cursor-pointer' />
-              <AiOutlineCodepen onClick={handleCodepen} className='hover:text-red-400 cursor-pointer' />
-            </div>
-            <div className="font-extrabold md:text-6xl text-5xl text-center"><span className="text-[#EE4E2E]">drop me a </span>message.</div>
-            <div className="text-center text-white leading-tight">Got a question or collaboration opportunity,<br />Or just simply want to say hi?<br />Go ahead.</div>
-            <button className="border-2 px-8 py-1 rounded-md hover:bg-[#5EB1BF] border-[#5EB1BF] hover:text-[#042a2b] z-20">SHOOT</button>
-          </div>
-          <div className="md:text-sm text-[8px] absolute md:bottom-5 bottom-2 flex flex-col items-center">
-            <img className="w-7 mt-2 text-center" src={logo} alt="logo" />
-            <p className="text-white">&copy; Leong Jin Kai</p>
-          </div>
+          <Contact ref={ref}/>
         </div>
       </div>
     </div>

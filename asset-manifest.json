@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6b183cef.css",
-    "main.js": "/static/js/main.32dcce66.js",
+    "main.js": "/static/js/main.6e1ffebf.js",
+    "static/media/todoapp.png": "/static/media/todoapp.e0ceb3a68f3eb28ea085.png",
     "static/media/jinkai-resume.pdf": "/static/media/jinkai-resume.1cb542788c0233a2ad2e.pdf",
     "static/media/Proxima Nova Bold.otf": "/static/media/Proxima Nova Bold.da16c8975f25ca6f2997.otf",
     "static/media/Proxima Nova Extrabold.otf": "/static/media/Proxima Nova Extrabold.c9d202c8ffb95b6ec8c1.otf",
@@ -11,10 +12,10 @@
     "index.html": "/index.html",
     "static/media/jk-logo.svg": "/static/media/jk-logo.c6420aa25b99aef714a8c6b773137485.svg",
     "main.6b183cef.css.map": "/static/css/main.6b183cef.css.map",
-    "main.32dcce66.js.map": "/static/js/main.32dcce66.js.map"
+    "main.6e1ffebf.js.map": "/static/js/main.6e1ffebf.js.map"
   },
   "entrypoints": [
     "static/css/main.6b183cef.css",
-    "static/js/main.32dcce66.js"
+    "static/js/main.6e1ffebf.js"
   ]
 }

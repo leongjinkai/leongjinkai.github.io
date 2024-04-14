@@ -10,11 +10,28 @@ import { motion, useInView } from "framer-motion";
 import Contact from "./components/Contact";
 import { useRef } from "react";
 import content from "./content/static.json";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
+import Lottie from "react-lottie";
+import * as lottie1 from "./assets/lotties/Animation - 1713118521359.json";
+import * as lottie2 from "./assets/lotties/Animation - 1713118593518.json";
+import * as lottie3 from "./assets/lotties/Animation - 1713119644289.json";
 
 function App() {
   const ref = useRef(null);
   const isinView = useInView(ref);
+
+  function lottieFactory(animationData: string) {
+    return {
+      loop: true,
+      autoplay: true, 
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+      }
+    };
+  }
+
+  
 
   const container = {
     hidden: { opacity: 0 },
@@ -55,7 +72,9 @@ function App() {
               <p className="text-white text-center font-Proxima font-extrabold text-[96px] p-0 leading-none">
                 {content.about.name}
               </p>
-              <p className="text-end font-bold text-3xl">{content.about.role}</p>
+              <p className="text-end font-bold text-3xl">
+                {content.about.role}
+              </p>
             </motion.div>
             <motion.div
               className="w-60 h-60 relative hover:scale-110 md:grayscale md:hover:grayscale-0 hover:ease-in-out hover:duration-500 hover:drop-shadow-2xl"
@@ -71,9 +90,7 @@ function App() {
             </motion.div>
           </div>
           <div className="hidden md:block">
-            <p className="md:ml-[20%]">
-              {parse(content.about.desc)}
-            </p>
+            <p className="md:ml-[20%]">{parse(content.about.desc)}</p>
           </div>
           {/* Web Position */}
           <motion.div
@@ -106,9 +123,7 @@ function App() {
             {content.about.page}
           </motion.div>
           <div className="w-[80%]">
-            <p className="font-bold text-3xl">
-              {content.about.desc}
-            </p>
+            <p className="font-bold text-3xl">{content.about.desc}</p>
           </div>
         </div>
         <div
@@ -218,22 +233,37 @@ function App() {
               className="text-center hover:drop-shadow-2xl"
               variants={item}
             >
-              <div className="w-60 h-60 bg-[#5EB1BF] opacity-30"></div>
-              <p className="mt-3">Project text 1</p>
+              <div className="w-60 h-60 bg-[#5EB1BF] opacity-30">
+              <Lottie 
+                options={lottieFactory(lottie1)}
+                isStopped={false}
+                isPaused={false}/>
+              </div>
+              <p className="mt-3">In Progress</p>
             </motion.div>
             <motion.div
               className="text-center hover:drop-shadow-2xl"
               variants={item}
             >
-              <div className="w-60 h-60 bg-[#EE4E2E] opacity-30"></div>
-              <p className="mt-3">Project text 2</p>
+              <div className="w-60 h-60 bg-[#EE4E2E] opacity-30">
+                <Lottie
+                  options={lottieFactory(lottie2)}
+                  isStopped={false}
+                  isPaused={false}/>
+              </div>
+              <p className="mt-3">Coding it out</p>
             </motion.div>
             <motion.div
               className="text-center hover:drop-shadow-2xl"
               variants={item}
             >
-              <div className="w-60 h-60 bg-[#5EB1BF] opacity-30"></div>
-              <p className="mt-3">Project text 3</p>
+              <div className="w-60 h-60 bg-[#5EB1BF] opacity-30">
+              <Lottie
+                  options={lottieFactory(lottie3)}
+                  isStopped={false}
+                  isPaused={false}/>
+              </div>
+              <p className="mt-3">Working on it</p>
             </motion.div>
           </motion.div>
           <Carousel />

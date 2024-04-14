@@ -79,7 +79,7 @@ export default forwardRef(function Contact(_props, ref: ContactProps["ref"]) {
               repeatType: "reverse",
               repeat: Infinity,
               repeatDelay: 4,
-              type: "spring"
+              type: "spring",
             }}
           >
             <TbMessageCircle className="" />

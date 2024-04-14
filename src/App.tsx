@@ -23,15 +23,13 @@ function App() {
   function lottieFactory(animationData: string) {
     return {
       loop: true,
-      autoplay: true, 
+      autoplay: true,
       animationData: animationData,
       rendererSettings: {
-        preserveAspectRatio: 'xMidYMid slice'
-      }
+        preserveAspectRatio: "xMidYMid slice",
+      },
     };
   }
-
-  
 
   const container = {
     hidden: { opacity: 0 },
@@ -234,10 +232,11 @@ function App() {
               variants={item}
             >
               <div className="w-60 h-60 bg-[#5EB1BF] opacity-30">
-              <Lottie 
-                options={lottieFactory(lottie1)}
-                isStopped={false}
-                isPaused={false}/>
+                <Lottie
+                  options={lottieFactory(lottie1)}
+                  isStopped={false}
+                  isPaused={false}
+                />
               </div>
               <p className="mt-3">In Progress</p>
             </motion.div>
@@ -249,7 +248,8 @@ function App() {
                 <Lottie
                   options={lottieFactory(lottie2)}
                   isStopped={false}
-                  isPaused={false}/>
+                  isPaused={false}
+                />
               </div>
               <p className="mt-3">Coding it out</p>
             </motion.div>
@@ -258,10 +258,11 @@ function App() {
               variants={item}
             >
               <div className="w-60 h-60 bg-[#5EB1BF] opacity-30">
-              <Lottie
+                <Lottie
                   options={lottieFactory(lottie3)}
                   isStopped={false}
-                  isPaused={false}/>
+                  isPaused={false}
+                />
               </div>
               <p className="mt-3">Working on it</p>
             </motion.div>

@@ -9,6 +9,8 @@ import profile from "./assets/jk_headshot.jpg";
 import { motion, useInView } from "framer-motion";
 import Contact from "./components/Contact";
 import { useRef } from "react";
+import content from "./content/static.json";
+import parse from 'html-react-parser';
 
 function App() {
   const ref = useRef(null);
@@ -49,11 +51,11 @@ function App() {
               transition={{ duration: 0.3 }}
               viewport={{ once: true }}
             >
-              <p className="text-[#EE4E2E]">Hi, my name is</p>
+              <p className="text-[#EE4E2E]">{content.about.intro1}</p>
               <p className="text-white text-center font-Proxima font-extrabold text-[96px] p-0 leading-none">
-                JINKAI
+                {content.about.name}
               </p>
-              <p className="text-end font-bold text-3xl">Web Developer</p>
+              <p className="text-end font-bold text-3xl">{content.about.role}</p>
             </motion.div>
             <motion.div
               className="w-60 h-60 relative hover:scale-110 md:grayscale md:hover:grayscale-0 hover:ease-in-out hover:duration-500 hover:drop-shadow-2xl"
@@ -70,9 +72,7 @@ function App() {
           </div>
           <div className="hidden md:block">
             <p className="md:ml-[20%]">
-              I specialize in building and desiging
-              <br />
-              interfaces for exceptional digital experiences
+              {parse(content.about.desc)}
             </p>
           </div>
           {/* Web Position */}
@@ -87,7 +87,7 @@ function App() {
               ease: "easeOut",
             }}
           >
-            ABOUT
+            {content.about.page}
           </motion.div>
         </div>
         {/* Mobile Position appears*/}
@@ -103,13 +103,11 @@ function App() {
               ease: "easeOut",
             }}
           >
-            ABOUT
+            {content.about.page}
           </motion.div>
           <div className="w-[80%]">
             <p className="font-bold text-3xl">
-              I specialize in building and desiging
-              <br />
-              interfaces for exceptional digital experiences
+              {content.about.desc}
             </p>
           </div>
         </div>
@@ -128,7 +126,7 @@ function App() {
               ease: "easeOut",
             }}
           >
-            SKILLS
+            {content.skills.page}
           </motion.div>
           <motion.div
             className="absolute"
@@ -151,7 +149,7 @@ function App() {
               initial={{ translateX: -300 }}
               whileInView={{ translateX: 0 }}
             >
-              Design
+              {content.skills.mainSkill1}
             </motion.div>
             {/* web Version */}
             <div className="md:flex justify-center align-middle gap-10 grow w-full hidden">
@@ -178,7 +176,7 @@ function App() {
               initial={{ translateX: 300 }}
               whileInView={{ translateX: 0 }}
             >
-              Engineering
+              {content.skills.mainSkill2}
             </motion.div>
             <div className="grid grid-cols-3 grid-rows-3 grid-flow-col left-10 items-end text-white md:hidden gap-x-6 text-center w-[80%]">
               <span>Node.js</span>
@@ -208,7 +206,7 @@ function App() {
               ease: "easeOut",
             }}
           >
-            PROJECTS
+            {content.projects.page}
           </motion.div>
           <motion.div
             className="md:flex w-[80%] gap-16 justify-center md:flex-row hidden"

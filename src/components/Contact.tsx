@@ -96,7 +96,7 @@ export default forwardRef(function Contact(_props, ref: ContactProps["ref"]) {
           onClick={handleEmail}
           className="border-2 px-8 py-1 rounded-md hover:drop-shadow-2xl hover:bg-[#5EB1BF] border-[#5EB1BF] hover:text-[#042a2b] z-20"
         >
-          SHOOT
+          Drop me an email
         </button>
       </div>
       <div className="md:text-sm text-[8px] absolute md:bottom-5 bottom-2 flex flex-col items-center">

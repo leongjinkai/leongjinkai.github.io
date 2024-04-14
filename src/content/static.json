@@ -1,0 +1,17 @@
+{
+    "about": {
+        "intro1": "Hi, my name is",
+        "name": "JIN KAI",
+        "role": "Software Developer",
+        "desc": "I specialize in building and designing<br />interfaces for exceptional digital experiences",
+        "page": "ABOUT"
+    },
+    "skills": {
+        "page": "SKILLS",
+        "mainSkill1": "Design",
+        "mainSkill2": "Engineering"
+    },
+    "projects": {
+        "page": "PROJECTS"
+    }
+}

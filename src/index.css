@@ -8,10 +8,10 @@ body {
   margin: 0px;
   width: 100vw;
   background-color: #042a2b;
-  color: #5EB1BF;
+  color: #5eb1bf;
   box-sizing: border-box;
   font-size: 20px;
-  font-family: 'Proxima';
+  font-family: "Proxima";
   box-sizing: border-box;
 }
 
@@ -20,8 +20,8 @@ body {
 }
 
 #scroll-container {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 #scroll-carousel::-webkit-scrollbar {
@@ -29,8 +29,8 @@ body {
 }
 
 #scroll-carousel {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @font-face {

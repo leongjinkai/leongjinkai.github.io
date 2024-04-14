@@ -1,5 +1,10 @@
 # Welcome to my portfolio website development build!
 
-This page is created with create-react-app, tailwindcss and framer-motion.
+This site serves as an online portfolio for me where I can showcase the projects that I have done as well as my prior work experience. I also hope that this can serve to inspire others to create their own portfolio website.
 
-## I will be considering adding in lotte animations for extra visual creativity and adding in my projects soon!
+# Project Description
+
+# Tech Stack Used
+
+- React
+-

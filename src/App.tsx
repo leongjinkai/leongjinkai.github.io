@@ -58,7 +58,7 @@ function App() {
           id="about-portion"
           className="relative h-[100vh] snap-start flex flex-col justify-center items-center md:items-stretch md:gap-10 gap-8"
         >
-          <div className="flex w-[80%] md:ml-[20%] items-center md:gap-20 gap-8 md:flex-row flex-col-reverse">
+          <div className="flex w-[85%] md:ml-[20%] items-center md:gap-20 gap-8 md:flex-row flex-col-reverse">
             <motion.div
               className="md:w-[50%] md:min-w-[320px] md:max-w-[420px] flex flex-col grow-0"
               initial={{ opacity: 0 }}

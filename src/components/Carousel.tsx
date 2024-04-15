@@ -1,6 +1,10 @@
 import * as React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Lottie from "react-lottie";
+import * as lottie1 from "../assets/lotties/Animation - 1713118521359.json";
+import * as lottie2 from "../assets/lotties/Animation - 1713118593518.json";
+import * as lottie3 from "../assets/lotties/Animation - 1713119644289.json";
 
 export default function Carousel() {
   const refone = useRef(null);
@@ -11,6 +15,17 @@ export default function Carousel() {
 
   const refthree = useRef(null);
   const isinViewThree = useInView(refthree);
+
+  function lottieFactory(animationData: string) {
+    return {
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    };
+  }
 
   return (
     <>
@@ -51,19 +66,37 @@ export default function Carousel() {
           ref={refone}
           className="text-center place-content-center shrink-0 snap-center"
         >
-          <div className="w-[80vw] h-[80vw] bg-[#5EB1BF] opacity-30"></div>
+          <div className="w-[80vw] h-[80vw] bg-[#5EB1BF] opacity-30">
+            <Lottie
+              options={lottieFactory(lottie1)}
+              isStopped={false}
+              isPaused={false}
+            />
+          </div>
         </motion.div>
         <motion.div
           ref={reftwo}
           className="text-center place-content-center shrink-0 snap-center"
         >
-          <div className="w-[80vw] h-[80vw] bg-[#EE4E2E] opacity-30"></div>
+          <div className="w-[80vw] h-[80vw] bg-[#EE4E2E] opacity-30">
+            <Lottie
+              options={lottieFactory(lottie2)}
+              isStopped={false}
+              isPaused={false}
+            />
+          </div>
         </motion.div>
         <motion.div
           ref={refthree}
           className="text-center place-content-center shrink-0 snap-center"
         >
-          <div className="w-[80vw] h-[80vw] bg-[#5EB1BF] opacity-30"></div>
+          <div className="w-[80vw] h-[80vw] bg-[#5EB1BF] opacity-30">
+            <Lottie
+              options={lottieFactory(lottie3)}
+              isStopped={false}
+              isPaused={false}
+            />
+          </div>
         </motion.div>
       </div>
     </>

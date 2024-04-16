@@ -121,7 +121,7 @@ function App() {
             {content.about.page}
           </motion.div>
           <div className="w-[80%]">
-            <p className="font-bold text-3xl">{content.about.desc}</p>
+            <p className="font-bold text-3xl">{parse(content.about.desc)}</p>
           </div>
         </div>
         <div

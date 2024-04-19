@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 import content from "../content/static.json";
 import { MdDesignServices } from "react-icons/md";
 import ExperienceCard from "../components/ExperienceCard";
-import parse from "html-react-parser";
+import { IoIosArrowUp } from "react-icons/io";
 
 export default function ExperienceSection() {
+  const [clicked, setClicked] = React.useState<boolean[]>([true, false, false]);
+
   return (
     <div
       id="experience-portion"
@@ -36,20 +38,35 @@ export default function ExperienceSection() {
         <ol className="relative border-l-2 border-gray-200 dark:border-gray-700">
           <ExperienceCard
             title={content.experience.presentRole.title}
+            company={content.experience.presentRole.company}
             timePeriod={content.experience.presentRole.timePeriod}
             desc={content.experience.presentRole.desc}
             currentRoleToast={content.experience.presentRole.currentRoleToast}
+            clicked={clicked}
+            setClicked={setClicked}
+            cardNo={0}
           />
           <ExperienceCard
             title={content.experience.pastRole1.title}
+            company={content.experience.pastRole1.company}
             timePeriod={content.experience.pastRole1.timePeriod}
             desc={content.experience.pastRole1.desc}
+            clicked={clicked}
+            setClicked={setClicked}
+            cardNo={1}
           />
           <ExperienceCard
             title={content.experience.pastRole2.title}
+            company={content.experience.pastRole2.company}
             timePeriod={content.experience.pastRole2.timePeriod}
             desc={content.experience.pastRole2.desc}
+            clicked={clicked}
+            setClicked={setClicked}
+            cardNo={2}
           />
+          <div className="absolute -top-[0.4rem] -left-[0.54rem]">
+            <IoIosArrowUp color="white" />
+          </div>
         </ol>
       </div>
     </div>

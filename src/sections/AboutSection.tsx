@@ -20,10 +20,10 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <p className="text-[#EE4E2E]">{content.about.intro1}</p>
-            <p className="text-white text-center font-Proxima font-extrabold text-[96px] p-0 leading-none">
+            <p className="text-white text-center font-Proxima font-extrabold text-[80px] p-0 leading-none">
               {content.about.name}
             </p>
-            <p className="text-end font-bold text-3xl">{content.about.role}</p>
+            <p className="text-end font-bold text-xl">{content.about.role}</p>
           </motion.div>
           <motion.div
             className="font-thin absolute md:left-[15%] left-2 md:bottom-1 bottom-12  md:text-[150px] text-[70px] opacity-25 md:hidden"
@@ -39,7 +39,7 @@ export default function AboutSection() {
             {content.about.welcome}
           </motion.div>
           <motion.div
-            className="w-60 h-60 relative hover:scale-110 hover:duration-500 hover:drop-shadow-2xl"
+            className="w-52 h-52 relative hover:scale-110 hover:duration-500 hover:drop-shadow-2xl"
             initial={{ scale: 0.1 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3, type: "spring" }}

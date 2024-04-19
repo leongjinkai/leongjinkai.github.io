@@ -5,10 +5,10 @@ import Sidebar from "./components/Sidebar.tsx";
 import { useInView } from "framer-motion";
 import Contact from "./components/Contact";
 import { useRef } from "react";
-import AboutSection from "./components/AboutSection.tsx";
-import SkillsSection from "./components/SkillsSection.tsx";
-import ProjectSection from "./components/ProjectSection.tsx";
-import ExperienceSection from "./components/ExperienceSection.tsx";
+import AboutSection from "./sections/AboutSection.tsx";
+import SkillsSection from "./sections/SkillsSection.tsx";
+import ProjectSection from "./sections/ProjectSection.tsx";
+import ExperienceSection from "./sections/ExperienceSection.tsx";
 
 function App() {
   const ref = useRef(null);

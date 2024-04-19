@@ -8,7 +8,23 @@
     "page": "ABOUT"
   },
   "experience": {
-    "page": "EXPERIENCE"
+    "page": "EXPERIENCE",
+    "presentRole": {
+        "title": "Software Developer at OCBC Singapore",
+        "timePeriod": "Nov 2023 - Present",
+        "desc": "<li>Developed Payments Features for OCBC consumer banking mobile app using UiKit and Combine</li><li>Worked on feature enhancements for OCBC overseas corporate banking MFE app</li><li>Led the legacy codebase migration for two features to React framework</li>",
+        "currentRoleToast": "Current Role"
+    },
+    "pastRole1": {
+        "title": "Technical Consultant at FDM Group",
+        "timePeriod": "June 2023 - Present",
+        "desc": "<li>Developed a full stack banking app with JWT and 2FA email authentication and authorization, along with chart visualization for spending analysis.</li>"
+    },
+    "pastRole2": {
+        "title": "Business Product Manager at Shopee",
+        "timePeriod": "May 2022 - June 2023",
+        "desc": "<li>Created dashboards using an in-house visualization platform for product analytics</li><li>Automated operational communications and data reporting procedures</li><li>Kickstart new product engagement channels and conducted company-wide training to raise awareness</li>"
+    }
   },
   "skills": {
     "page": "SKILLS",

@@ -76,6 +76,9 @@ export default function Navbar() {
             <a href="#about-portion">About</a>
           </div>
           <div className="hover:text-[#EE4E2E]">
+            <a href="#experience-portion">Experience</a>
+          </div>
+          <div className="hover:text-[#EE4E2E]">
             <a href="#skills-portion">Skills</a>
           </div>
           <div className="hover:text-[#EE4E2E]">
@@ -95,7 +98,7 @@ export default function Navbar() {
       <AnimatePresence>
         <div className="md:hidden w-full">
           <motion.div
-            className="bg-white fixed w-[100vw] h-[70%] z-30 text-black"
+            className="bg-white fixed w-[100vw] pb-8 z-30 text-black"
             animate={burgerToggle ? "open" : "closed"}
             initial={{ translateY: -1000 }}
             variants={variants}
@@ -108,6 +111,13 @@ export default function Navbar() {
               >
                 <a href="#about-portion">About</a>
               </motion.div>
+              <div
+                onClick={() => {
+                  setBurgerToggle(!burgerToggle);
+                }}
+              >
+                <a href="#experience-portion">Experience</a>
+              </div>
               <div
                 onClick={() => {
                   setBurgerToggle(!burgerToggle);

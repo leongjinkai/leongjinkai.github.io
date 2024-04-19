@@ -3,8 +3,12 @@
     "intro1": "Hi, my name is",
     "name": "JIN KAI",
     "role": "Software Developer",
-    "desc": "I specialize in building and designing<br />interfaces for exceptional digital experiences",
+    "welcome": "WELCOME",
+    "desc": "Software Engineer with experience in web and mobile development, specialising in React and UiKit.<br><br>A self-learner passionate about full stack development for complex, high traffic apps.",
     "page": "ABOUT"
+  },
+  "experience": {
+    "page": "EXPERIENCE"
   },
   "skills": {
     "page": "SKILLS",
@@ -12,6 +16,9 @@
     "mainSkill2": "Engineering"
   },
   "projects": {
-    "page": "PROJECTS"
+    "page": "PROJECTS",
+    "project1Title": "In Progress",
+    "project2Title": "Coding it out",
+    "project3Title": "Working on it"
   }
 }

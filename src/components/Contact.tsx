@@ -30,8 +30,8 @@ export default forwardRef(function Contact(_props, ref: ContactProps["ref"]) {
   return (
     <>
       <motion.div
-        className="font-thin absolute md:left-[10%] left-2 md:bottom-1 bottom-16 md:text-[150px] text-[70px] opacity-25 z-10"
-        initial={{ translateX: 300 }}
+        className="font-thin absolute md:right-[10%] right-2 md:bottom-1 bottom-12 md:text-[150px] text-[70px] opacity-25"
+        initial={{ translateX: -300 }}
         whileInView={{ translateX: 0 }}
         transition={{
           type: "spring",

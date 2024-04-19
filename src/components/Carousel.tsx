@@ -5,6 +5,7 @@ import Lottie from "react-lottie";
 import * as lottie1 from "../assets/lotties/Animation - 1713118521359.json";
 import * as lottie2 from "../assets/lotties/Animation - 1713118593518.json";
 import * as lottie3 from "../assets/lotties/Animation - 1713119644289.json";
+import content from "../content/static.json";
 
 export default function Carousel() {
   const refone = useRef(null);
@@ -73,6 +74,9 @@ export default function Carousel() {
               isPaused={false}
             />
           </div>
+          <div className="mt-8 text-white">
+            {content.projects.project1Title}
+          </div>
         </motion.div>
         <motion.div
           ref={reftwo}
@@ -85,6 +89,9 @@ export default function Carousel() {
               isPaused={false}
             />
           </div>
+          <div className="mt-8 text-white">
+            {content.projects.project2Title}
+          </div>
         </motion.div>
         <motion.div
           ref={refthree}
@@ -96,6 +103,9 @@ export default function Carousel() {
               isStopped={false}
               isPaused={false}
             />
+          </div>
+          <div className="mt-8 text-white">
+            {content.projects.project3Title}
           </div>
         </motion.div>
       </div>

@@ -39,7 +39,7 @@ export default function AboutSection() {
             {content.about.welcome}
           </motion.div>
           <motion.div
-            className="w-52 h-52 relative hover:scale-110 hover:duration-500 hover:drop-shadow-2xl"
+            className="w-52 h-52 md:w-60 md:h-60 relative hover:scale-110 hover:duration-500 hover:drop-shadow-2xl"
             initial={{ scale: 0.1 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.3, type: "spring" }}

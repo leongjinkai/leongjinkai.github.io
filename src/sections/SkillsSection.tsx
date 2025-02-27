@@ -46,7 +46,7 @@ export default function SkillsSection() {
       >
         <MdDesignServices className="text-[15rem] opacity-5 text-white" />
       </motion.div>
-      <div className="flex flex-col w-[80%] md:h-[55%] h-[65%] justify-center items-center gap-5 mb-[100px]">
+      <div className="flex flex-col w-[80%] md:h-[55%] h-[65%] justify-center items-center gap-5 mb-[50px]">
         {/* Mobile Version */}
         <div className="flex justify-center items-center gap-3 text-white md:hidden mr-8">
           <span className="grow">

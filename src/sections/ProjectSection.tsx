@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import content from "../content/static.json";
 import Carousel from "../components/Carousel.tsx";
 import * as lottie1 from "../assets/lotties/Animation - 1713118521359.json";
-import * as lottie2 from "../assets/lotties/Animation - 1713118593518.json";
 import * as lottie3 from "../assets/lotties/Animation - 1713119644289.json";
 import Lottie from "react-lottie";
+import ReactPlayer from 'react-player';
 
 export default function ProjectSection() {
   const container = {
@@ -75,13 +75,13 @@ export default function ProjectSection() {
           className="text-center hover:drop-shadow-2xl"
           variants={item}
         >
-          <div className="w-60 h-60 bg-[#EE4E2E] opacity-30">
-            <Lottie
-              options={lottieFactory(lottie2)}
-              isStopped={false}
-              isPaused={false}
+          <ReactPlayer
+            className='w-60 h-60 react-player fixed-bottom flex justify-center bg-white'
+            url= '/swiper-demo.MP4'
+            controls = {true}
+            width="300px"
+            height="300px"
             />
-          </div>
           <p className="mt-3">{content.projects.project2Title}</p>
         </motion.div>
         <motion.div
